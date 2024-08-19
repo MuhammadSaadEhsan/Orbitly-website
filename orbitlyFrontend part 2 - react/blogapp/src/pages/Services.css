@@ -1,0 +1,54 @@
+/* Services.css */
+
+.services-container {
+    padding: 20px;
+    max-width: 900px;
+    margin: 0 auto;
+    animation: fadeIn 2s ease-in-out;
+}
+
+.services-header {
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin-bottom: 20px;
+    text-align: center;
+    color: #007bff;
+    animation: slideInDown 1s ease-out;
+}
+
+.services-paragraph {
+    font-size: 1.2rem;
+    line-height: 1.6;
+    margin-bottom: 20px;
+    color: #555;
+    animation: fadeInUp 1.5s ease-in-out;
+}
+
+.card-custom {
+    background-color: #f8f9fa;
+    border: 1px solid #dee2e6;
+    border-radius: 0.25rem;
+    box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075);
+    margin-bottom: 20px;
+    animation: fadeInUp 1.5s ease-in-out;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+@keyframes slideInDown {
+    from { transform: translateY(-100px); opacity: 0; }
+    to { transform: translateY(0); opacity: 1; }
+}
+
+@keyframes fadeInUp {
+    from { transform: translateY(50px); opacity: 0; }
+    to { transform: translateY(0); opacity: 1; }
+}
+
+.services-card:hover p,
+.services-card:hover li {
+    color: white;
+}

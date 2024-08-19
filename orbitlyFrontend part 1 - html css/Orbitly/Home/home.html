@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Orbitly</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+
+    <a href="#profile" id="profile-link" onclick="redirectUser()">
+        <img src="/assets2/profile pic.jpg" alt="User Profile" id="profile-image">
+    </a>
+
+    <div class="navbar">
+        <a href="home.html" class="brandlogo"><img src="/assets2/orbit-sputnik-svgrepo-com.svg" height="50px"></a>
+        <ul>
+            <a href="home.html">HOME</a>
+            <a href="/Explore Satellites/explore.html">EXPLORE</a>
+            <a href="/SateFinder/realtime_satellite_info.html">SATEFINDER</a>
+            <a href="http://localhost:5173/">COMMUNITY</a>
+        </ul>
+    </div>
+
+
+    <div class="container">
+        <div id="main">
+            <div id="welcome">
+                <h1 id="welcome-title">WELCOME TO</h1><br>
+                <h1 id="orbitly" data-value="ORBITLY" class="magic-text">ORBITLY</h1>
+                <h4 class="welcomeDesc">Your Portal to the Space, <br> and Beyond</h4>
+                <canvas></canvas>
+            </div>
+            <div class="emptyPage"></div>
+            <div class="welcome2">
+                <h4>Your gateway to the
+                    <span class="magic-text">cosmos:</span>
+                    <br><br>Discover the universe from
+                    the comfort of your home,<br> with a
+                    platform designed to bring the wonders of space closer to <br>
+                    <span class="magic">
+                        <span class="magic-star">
+                            <svg viewBox="0 0 512 512">
+                                <path
+                                    d="M512 255.1c0 11.34-7.406 20.86-18.44 23.64l-171.3 42.78l-42.78 171.1C276.7 504.6 267.2 512 255.9 512s-20.84-7.406-23.62-18.44l-42.66-171.2L18.47 279.6C7.406 276.8 0 267.3 0 255.1c0-11.34 7.406-20.83 18.44-23.61l171.2-42.78l42.78-171.1C235.2 7.406 244.7 0 256 0s20.84 7.406 23.62 18.44l42.78 171.2l171.2 42.78C504.6 235.2 512 244.6 512 255.1z" />
+                            </svg>
+                        </span>
+                        <span class="magic-star">
+                            <svg viewBox="0 0 512 512">
+                                <path
+                                    d="M512 255.1c0 11.34-7.406 20.86-18.44 23.64l-171.3 42.78l-42.78 171.1C276.7 504.6 267.2 512 255.9 512s-20.84-7.406-23.62-18.44l-42.66-171.2L18.47 279.6C7.406 276.8 0 267.3 0 255.1c0-11.34 7.406-20.83 18.44-23.61l171.2-42.78l42.78-171.1C235.2 7.406 244.7 0 256 0s20.84 7.406 23.62 18.44l42.78 171.2l171.2 42.78C504.6 235.2 512 244.6 512 255.1z" />
+                            </svg>
+                        </span>
+                        <span class="magic-star">
+                            <svg viewBox="0 0 512 512">
+                                <path
+                                    d="M512 255.1c0 11.34-7.406 20.86-18.44 23.64l-171.3 42.78l-42.78 171.1C276.7 504.6 267.2 512 255.9 512s-20.84-7.406-23.62-18.44l-42.66-171.2L18.47 279.6C7.406 276.8 0 267.3 0 255.1c0-11.34 7.406-20.83 18.44-23.61l171.2-42.78l42.78-171.1C235.2 7.406 244.7 0 256 0s20.84 7.406 23.62 18.44l42.78 171.2l171.2 42.78C504.6 235.2 512 244.6 512 255.1z" />
+                            </svg>
+                        </span>
+                        <span id="emphasis">YOU</span>
+                    </span>
+                </h4>
+            </div>
+        </div>
+
+        <div class="about-orbitly scroll-reveal">
+            <h1 class="left-side about-heading"><span class="big-letter">A</span>BOUT <span
+                    class="big-letter">O</span>RBITLY</h1>
+            <div class="right-side">
+                <div class="problem-statement"><span class="emphasized">
+                        Accessing satellite data and space
+                        resources is complex.
+                    </span><br> Teachers,
+                    students, and space jams struggle to
+                    find accurate info about Earth-orbiting Satellites
+                </div><br>
+                <div class="solution-orbitly"><span class="emphasized">
+                        Orbitly bridges this gap
+                        for easy satellite tracking and space
+                        education.
+                    </span> <br>
+                    <br>Our mission is to make the
+                    cosmos in your hands through
+                    real-time satellite tracking, satellite info and engaging content
+                </div>
+            </div>
+        </div>
+
+        <h1 class="review-heading">What are <br> <span class="magic-text">Other's Opinions</span></h1>
+        <div class="reviews">
+            <div class="review-card">
+                <div class="person-comment">Orbitly is an amazing project. I am amazed! <br><br>40 sessionals!</div>
+                <div class="person-image"><img src="/assets2/teacher-female-svgrepo-com.svg" alt=""></div>
+                <div class="person-name"><strong>Miss Naveera Sami</strong></div>
+            </div>
+            <div class="review-card">
+                <div class="person-comment">This platform helps me to easily keep track of the satellites, <br><br>which
+                    helps to locate my enemies.</div>
+                <div class="person-image"><img
+                        src="https://hips.hearstapps.com/hmg-prod/images/mh-9-22-wick-650dcf0aeb656.jpg?crop=0.447xw:0.895xh;0,0&resize=640:*"
+                        alt=""></div>
+                <div class="person-name"><strong>Mr. John Wick</strong></div>
+            </div>
+            <div class="review-card">
+                <div class="person-comment">Yes, this is exactly what we wanted. The ability to keep watch on all the
+                    satellites, 24/7. <br><br>Btw, This is ours now, even if you mind.</div>
+                <div class="person-image"><img
+                        src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/5b/Greater_coat_of_arms_of_the_United_States.svg/1200px-Greater_coat_of_arms_of_the_United_States.svg.png"
+                        alt=""></div>
+                <div class="person-name"><strong>US Government</strong></div>
+            </div>
+        </div>
+
+        <div class="founders">
+            <h1 class="heading">Our Co-founders</h1>
+            <h4 id="founder-subheading">This unique platform was brought to life by our three co-founders, Raza Aziz,
+                Mubashir Abid and Saad Ehsan. <br>Excellent in academics, they showed results in studies as well as in
+                extracurricular activities. <br>This platform is a valid evidence of this remarkable intelligence.</h4>
+            <div class="cards">
+                <div class="raza card">
+                    <img src="/assets2/raza/Raza black shirt-Photoroom.png" class="card-img front">
+                    <img class="background-img" src="/assets2/raza/Raza cousin wedding 2.jpg">
+                </div>
+                <div class="mubashir card">
+                    <img src="/assets2/Mubashir/Mubashir Forefront.png" class="card-img front">
+                    <img class="background-img" src="/assets2/Mubashir/Mubashir Bg.jpg">
+                </div>
+                <div class="saad card">
+                    <img src="/assets2/Saad/Saad front pic.jpg" class="card-img front">
+                    <img class="background-img" src="/assets2/Saad/Saad bg pic.jpg">
+                </div>
+            </div>
+            <div class="card-title">
+                <h2>Raza Aziz</h2>
+                <h2>Mubashir Abid</h2>
+                <h2>Saad Ehsan</h2>
+            </div>
+        </div>
+        <footer class="footer">
+            <div class="footer-container">
+                <div class="row">
+                    <div class="footer-col">
+                        <h4>company</h4>
+                        <ul>
+                            <li><a href="#">about us</a></li>
+                            <li><a href="#">privacy policy</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-col">
+                        <h4>Explore</h4>
+                        <ul>
+                            <li><a href="#">FAQ</a></li>
+                            <li><a href="/Explore Satellites/explore.html">Satellites</a></li>
+                            <li><a href="http://localhost:5173/">Community</a></li>
+                            <li><a href="/SateFinder/realtime_satellite_info.html">Nearest Satellite</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-col">
+                        <h4>Made by:</h4>
+                        <ul>
+                            <li><a href="/Home/home.html">Raza Aziz</a></li>
+                            <li><a href="/Home/home.html">Saad Ehsan</a></li>
+                            <li><a href="/Home/home.html">Mubashir Abid</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-col">
+                        <div class="footer-social-card">
+                            <div class="background">
+                            </div>
+                            <div class="logo">
+                                Follow Us
+                            </div>
+
+                            <a href="#">
+                                <div class="box box1"><span class="icon"><svg viewBox="0 0 30 30"
+                                            xmlns="http://www.w3.org/2000/svg" class="svg">
+                                            <path
+                                                d="M 9.9980469 3 C 6.1390469 3 3 6.1419531 3 10.001953 L 3 20.001953 C 3 23.860953 6.1419531 27 10.001953 27 L 20.001953 27 C 23.860953 27 27 23.858047 27 19.998047 L 27 9.9980469 C 27 6.1390469 23.858047 3 19.998047 3 L 9.9980469 3 z M 22 7 C 22.552 7 23 7.448 23 8 C 23 8.552 22.552 9 22 9 C 21.448 9 21 8.552 21 8 C 21 7.448 21.448 7 22 7 z M 15 9 C 18.309 9 21 11.691 21 15 C 21 18.309 18.309 21 15 21 C 11.691 21 9 18.309 9 15 C 9 11.691 11.691 9 15 9 z M 15 11 A 4 4 0 0 0 11 15 A 4 4 0 0 0 15 19 A 4 4 0 0 0 19 15 A 4 4 0 0 0 15 11 z">
+                                            </path>
+                                        </svg></span></div>
+                            </a>
+
+                            <a href="##">
+                                <div class="box box2"> <span class="icon"><svg viewBox="0 0 512 512"
+                                            xmlns="http://www.w3.org/2000/svg" class="svg">
+                                            <path
+                                                d="M459.37 151.716c.325 4.548.325 9.097.325 13.645 0 138.72-105.583 298.558-298.558 298.558-59.452 0-114.68-17.219-161.137-47.106 8.447.974 16.568 1.299 25.34 1.299 49.055 0 94.213-16.568 130.274-44.832-46.132-.975-84.792-31.188-98.112-72.772 6.498.974 12.995 1.624 19.818 1.624 9.421 0 18.843-1.3 27.614-3.573-48.081-9.747-84.143-51.98-84.143-102.985v-1.299c13.969 7.797 30.214 12.67 47.431 13.319-28.264-18.843-46.781-51.005-46.781-87.391 0-19.492 5.197-37.36 14.294-52.954 51.655 63.675 129.3 105.258 216.365 109.807-1.624-7.797-2.599-15.918-2.599-24.04 0-57.828 46.782-104.934 104.934-104.934 30.213 0 57.502 12.67 76.67 33.137 23.715-4.548 46.456-13.32 66.599-25.34-7.798 24.366-24.366 44.833-46.132 57.827 21.117-2.273 41.584-8.122 60.426-16.243-14.292 20.791-32.161 39.308-52.628 54.253z">
+                                            </path>
+                                        </svg></span></div>
+                            </a>
+
+                            <a href="###">
+                                <div class="box box3"><span class="icon"><svg viewBox="0 0 640 512"
+                                            xmlns="http://www.w3.org/2000/svg" class="svg">
+                                            <path
+                                                d="M524.531,69.836a1.5,1.5,0,0,0-.764-.7A485.065,485.065,0,0,0,404.081,32.03a1.816,1.816,0,0,0-1.923.91,337.461,337.461,0,0,0-14.9,30.6,447.848,447.848,0,0,0-134.426,0,309.541,309.541,0,0,0-15.135-30.6,1.89,1.89,0,0,0-1.924-.91A483.689,483.689,0,0,0,116.085,69.137a1.712,1.712,0,0,0-.788.676C39.068,183.651,18.186,294.69,28.43,404.354a2.016,2.016,0,0,0,.765,1.375A487.666,487.666,0,0,0,176.02,479.918a1.9,1.9,0,0,0,2.063-.676A348.2,348.2,0,0,0,208.12,430.4a1.86,1.86,0,0,0-1.019-2.588,321.173,321.173,0,0,1-45.868-21.853,1.885,1.885,0,0,1-.185-3.126c3.082-2.309,6.166-4.711,9.109-7.137a1.819,1.819,0,0,1,1.9-.256c96.229,43.917,200.41,43.917,295.5,0a1.812,1.812,0,0,1,1.924.233c2.944,2.426,6.027,4.851,9.132,7.16a1.884,1.884,0,0,1-.162,3.126,301.407,301.407,0,0,1-45.89,21.83,1.875,1.875,0,0,0-1,2.611,391.055,391.055,0,0,0,30.014,48.815,1.864,1.864,0,0,0,2.063.7A486.048,486.048,0,0,0,610.7,405.729a1.882,1.882,0,0,0,.765-1.352C623.729,277.594,590.933,167.465,524.531,69.836ZM222.491,337.58c-28.972,0-52.844-26.587-52.844-59.239S193.056,219.1,222.491,219.1c29.665,0,53.306,26.82,52.843,59.239C275.334,310.993,251.924,337.58,222.491,337.58Zm195.38,0c-28.971,0-52.843-26.587-52.843-59.239S388.437,219.1,417.871,219.1c29.667,0,53.307,26.82,52.844,59.239C470.715,310.993,447.538,337.58,417.871,337.58Z">
+                                            </path>
+                                        </svg></span></div>
+                            </a>
+
+                            <div class="box box4"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"
+        integrity="sha512-onMTRKJBKz8M1TnqqDuGBlowlH0ohFzMXYRNebz+yOcc5TQr/zAKsthzhuv0hiyUKEiQEQXEynnXCvNTOk50dg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"
+        integrity="sha512-7eHRwcbYkK4d9g/6tD/mhkf++eoTHwpNM9woBxtPUBWm67zeAfFC+HrdoE2GanKeocly/VxeLvIqwvCdk7qScg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>

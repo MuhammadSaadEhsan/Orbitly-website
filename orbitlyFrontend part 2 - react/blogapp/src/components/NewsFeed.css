@@ -1,0 +1,43 @@
+.main-heading {
+    font-weight: 700;
+    font-size: 3rem;
+    font-family: 'Azonix Regular';
+    background: #5145CF;
+    background: linear-gradient(to right, #5145CF 0%, #2a0b3f 50%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.card {
+    background: rgba(43, 111, 173, 0.36);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(9px);
+    -webkit-backdrop-filter: blur(9px);
+    border: 1px solid rgba(43, 111, 173, 0.3);
+    color: aliceblue;
+    transition: all 0.4s ease-in-out;
+    /* cursor: pointer; */
+}
+
+
+.card-body>* {
+    color: aliceblue;
+}
+
+.card:hover {
+    background: rgba(4, 25, 44, 0.36);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(9px);
+    -webkit-backdrop-filter: blur(9px);
+    border: 1px solid rgba(4, 25, 44, 0.36);
+}
+
+@font-face {
+    font-family: 'Azonix Regular';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Azonix Regular'), url('Azonix.woff') format('woff');
+}
